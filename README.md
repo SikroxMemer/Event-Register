@@ -36,4 +36,5 @@ CREATE DATABASE my_data_base;
 ```
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://youruser:yourpassword@localhost/yourdatabase'
 ```
-<https://flask.palletsprojects.com/en/2.2.x/>
+* Documents : <https://flask.palletsprojects.com/en/2.2.x/>
+* Based On : <https://github.com/jakerieger/FlaskIntroduction>
