@@ -21,3 +21,19 @@ pip install flask-sqlalchemy
 ```
 pip install pymysql
 ```
+>To Set Up Mysql in your app you need to have a user , password , database in Mysql For Example :
+>
+>>*To Make A User In MYSQL:*
+```
+CREATE USER 'username'@'host' IDENTIFIED WITH authentication_plugin BY 'password';
+```
+>>*The ```authentication_plugin``` Can Differ Between Diffrent Users So Make Sure You Find The Supported One*
+>>*Next Make A Database :*
+```
+CREATE DATABASE my_data_base;
+```
+>>Finally:
+```
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://youruser:yourpassword@localhost/yourdatabase'
+```
+<https://flask.palletsprojects.com/en/2.2.x/>
