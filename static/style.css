@@ -1,0 +1,29 @@
+.content {margin:auto;padding:25px;width:20%;text-align:center;}
+.content label {font-family:monospace;}
+.content input {width:250px;height:25px;}
+.content input[type="submit"]{width:260px;height:25px;}
+.content textarea {resize:none;width:250px;}
+
+.content #desc {
+    height:100px;
+}
+
+.content table{margin:auto;padding:20px;width:40%;text-align:center;}
+
+.content table th {
+    border-bottom:1px dotted black;
+    border-left:1px dotted black;
+    border-right:1px dotted black;
+    border-top:1px dotted black;
+}
+.content table td {
+    border-bottom:1px dashed black;
+    border-left:1px dashed black;
+    border-right:1px dashed black;
+    border-top:1px dashed black;
+}
+
+.content table td button a{
+    color:black;
+    text-decoration:none;
+}
