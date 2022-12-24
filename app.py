@@ -3,7 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://sqluser:7531594862Simo**@localhost/base_1'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://youruser:yourpassword@localhost/yourdatabase'
 
 db = SQLAlchemy(app)
 
