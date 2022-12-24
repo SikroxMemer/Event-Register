@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+    <title>Class Manager</title>
+</head>
+
+<body>
+    <div class="content">
+        <form action="/" method="POST">
+            <label for="content">Enter An Event Name :</label><br><br>
+            <input type="text" name="content" id="content"><br><br>
+            <label for="desc">Description :</label>
+            <input type="text" name="desc" id="desc"><br><br>
+            <input type="submit" value="VALID">
+        </form>
+        <table>
+            <tr>
+                <th>Event</th>
+                <th>Event Date</th>
+                <th>Event Description</th>
+                <th>Actions</th>
+            </tr>
+            {% for event in events %}
+            <tr>
+                <td>{{ event.name }}</td>
+                <td>{{ event.date.date() }}</td>
+                <th>{{ event.desc }}</th>
+                <td><button type="button"><a href="/delete/{{event.id}}">Delete</a></button></td>
+            </tr>
+            
+            {% endfor %}
+        </table>
+    </div>
+</body>
+</html>
